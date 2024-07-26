@@ -7,7 +7,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-os.environ["GROQ_API_KEY"] =  os.getenv("OPENAI_API_KEY")
+os.environ["GROQ_API_KEY"] =  os.getenv("GROQ_API_KEY")
 #langsmith tracking
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = "groq_tutorial"
